@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "hoFY3IsI1mei6Ema53D9QT",
+    "id" : "2XgAQnKxcM0fQF7rRySaMH",
     "name" : "VCS_DRS_ZDT_AST",
     "type" : "DRS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01001O0G0000000009JQ"
+        "repoHandle" : "01001R0G00000000054J"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "bQRIdZXieIIfIyvD4mcJ0h",
+    "id" : "aR7KwqkzJISjx1dIvy4ymz",
     "name" : "S8_SQLSERVER2K8",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01001O0B000000000A9P"
+        "repoHandle" : "01001R0B000000003B16"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -44,7 +44,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "2VCGa6EWKPNgL6oRFWP22E",
+    "id" : "82nRoa4cLyEfeOJNg6FsgX",
     "name" : "CSV_TGT_UTF",
     "type" : "Connection",
     "metadata" : {
@@ -53,11 +53,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01001O0B0000000006Z7"
+        "repoHandle" : "01001R0B000000001580"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Flat File connection for CMD Java Automation",
+        "description" : "CSV",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
