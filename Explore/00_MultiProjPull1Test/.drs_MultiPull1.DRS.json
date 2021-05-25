@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "8p3bfuO7zq7hyAXHSDxUyZ",
+    "id" : "4kZjzWkbaYsdoZ8V7DjSKS",
     "name" : "drs_MultiPull1",
     "type" : "DRS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01001O0G0000000009KX"
+        "repoHandle" : "01227E0G00000000000N"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,27 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "iQnhAJCWpmCbperjISjYET",
+    "id" : "g89osEd8tMXfoPSuDPWPaX",
+    "name" : "FF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E0B00000000000I"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "test desc",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "kfUiDgWA5kkdyMqYhkuScv",
     "name" : "RP_Sql_Server201",
     "type" : "Connection",
     "metadata" : {
@@ -33,27 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01001O0B0000000001H2"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "eQJNnJMepEFj3sbM0H2eoy",
-    "name" : "ff",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01001O0B000000000004"
+        "repoHandle" : "01227E0B00000000000K"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
