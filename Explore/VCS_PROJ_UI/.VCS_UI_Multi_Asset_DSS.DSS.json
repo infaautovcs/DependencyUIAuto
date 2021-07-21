@@ -1,15 +1,15 @@
 {
   "objectInfo" : {
-    "id" : "0ylkTCGUEsXgMjEk9jg60n",
-    "name" : "VCS_UI_Mapping",
-    "type" : "DTEMPLATE",
+    "id" : "9H39bDXNwY5jbPbNvXbe2o",
+    "name" : "VCS_UI_Multi_Asset_DSS",
+    "type" : "DSS",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW1700000000001I"
+        "repoHandle" : "010OFW0I00000000000P"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,6 +24,26 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
+    "id" : "45Cf0CkttcphIMqK9CnkSf",
+    "name" : "SQL_Server_PodCertification",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010OFW0B00000000000T"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "SQL Server connection for Pod Certification Automation",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
     "id" : "8CscJYf1s9whbKd6qVkkQp",
     "name" : "FF_PodCertification",
     "type" : "Connection",

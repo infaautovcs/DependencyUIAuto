@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "0ylkTCGUEsXgMjEk9jg60n",
-    "name" : "VCS_UI_Mapping",
+    "id" : "4JQgxqbu0hBbYR4PTRJ3iL",
+    "name" : "VCS_UI_Mapping_SQL_FF_1",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,14 +9,14 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW1700000000001I"
+        "repoHandle" : "010OFW1700000000001G"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "Pod Certification Task: Mapping has a src and a target. ",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -24,6 +24,26 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
+    "id" : "45Cf0CkttcphIMqK9CnkSf",
+    "name" : "SQL_Server_PodCertification",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010OFW0B00000000000T"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "SQL Server connection for Pod Certification Automation",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
     "id" : "8CscJYf1s9whbKd6qVkkQp",
     "name" : "FF_PodCertification",
     "type" : "Connection",

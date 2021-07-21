@@ -1,22 +1,22 @@
 {
   "objectInfo" : {
-    "id" : "0ylkTCGUEsXgMjEk9jg60n",
-    "name" : "VCS_UI_Mapping",
-    "type" : "DTEMPLATE",
+    "id" : "aifetTIrfgzbkGxoWVGPax",
+    "name" : "VCS_UI_Multi_Asset_DRS",
+    "type" : "DRS",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW1700000000001I"
+        "repoHandle" : "010OFW0G00000000000J"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "",
+        "description" : "This is DRS for Pod Certification",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -24,6 +24,26 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
+    "id" : "45Cf0CkttcphIMqK9CnkSf",
+    "name" : "SQL_Server_PodCertification",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010OFW0B00000000000T"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "SQL Server connection for Pod Certification Automation",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
     "id" : "8CscJYf1s9whbKd6qVkkQp",
     "name" : "FF_PodCertification",
     "type" : "Connection",
