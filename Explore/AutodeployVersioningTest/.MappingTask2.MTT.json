@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "hGUPk4PmyYVlOvsZ4akdiA",
+    "id" : "0eV5wvVNlQslWizA74Zr8f",
     "name" : "MappingTask2",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0112NC0Z000000000019"
+        "repoHandle" : "0112NC0Z00000000001A"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,6 +24,26 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
+    "id" : "eRZ96PTvwmKjqAx6RxSoyX",
+    "name" : "Mapping10",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0112NC170000000007UQ"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/AutodeployVersioningTest"
+  }, {
     "id" : "0z1HlYPxIsvlOmvKOaaVSw",
     "name" : "tms33rh64001.informatica.com",
     "type" : "AgentGroup",
@@ -63,28 +83,5 @@
       }
     },
     "path" : "/SYS"
-  }, {
-    "id" : "de6SBwsxY0dcLiduh5t8yy",
-    "name" : "Mapping10",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0112NC170000000007UP"
-      },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/AutodeployVersioningTest"
   } ]
 }
