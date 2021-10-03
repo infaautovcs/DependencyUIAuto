@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "00XccWa9lIebISilZ9uyoe",
+    "id" : "gACgghddsumhwQnI1zHzmr",
     "name" : "V3_VCS_DSS_FF_FF",
     "type" : "DSS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OGV0I000000000002"
+        "repoHandle" : "010I1N0I000000000002"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "1iAVnUGhnqVbnC2BEjg9Ic",
+    "id" : "3AtMbpSSNe3b2iifojFigI",
     "name" : "FF_PodCertification",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OGV0B000000000002"
+        "repoHandle" : "010I1N0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
