@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "1f4ruZkMLAOllzC58DWtqd",
+    "id" : "8U1xxAGrK2Hj9rjrzxbhA3",
     "name" : "MappingTask1",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW0Z0000000006IH"
+        "repoHandle" : "010OFW0Z0000000006LN"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -17,7 +17,7 @@
       } ],
       "additionalInfo" : {
         "description" : "",
-        "contentType" : null,
+        "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
@@ -41,7 +41,7 @@
       } ],
       "additionalInfo" : {
         "description" : "",
-        "contentType" : null,
+        "contentType" : "JSON",
         "documentState" : "VALID"
       }
     },
