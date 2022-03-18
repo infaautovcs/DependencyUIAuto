@@ -75,7 +75,10 @@
       "repoInfo" : {
         "repoHandle" : "010RGB1700000000003K"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "",
         "contentType" : null,
