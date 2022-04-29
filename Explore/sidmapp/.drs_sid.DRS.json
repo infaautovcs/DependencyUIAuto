@@ -17,7 +17,7 @@
       } ],
       "additionalInfo" : {
         "description" : null,
-        "contentType" : null,
+        "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
@@ -44,8 +44,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "4rewdzs4MurerG68684LeI",
-    "name" : "RP_Sql_Server201",
+    "id" : "khrg8t9U4wMjG3JandwXKm",
+    "name" : "Connection_Test839891372",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -53,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW0B00000000000R"
+        "repoHandle" : "010OFW0B00000000848U"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
