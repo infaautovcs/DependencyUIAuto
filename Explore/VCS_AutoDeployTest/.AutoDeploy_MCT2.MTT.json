@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "58RoocwfcQBi7RZVrA2U2A",
+    "id" : "01MaJsVXq8ie90wtCDNaae",
     "name" : "AutoDeploy_MCT2",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0125YE0Z000000000003"
+        "repoHandle" : "0100BA0Z000000000003"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "0PIWUBGazONde9q6ESEIKX",
+    "id" : "kswoUTi0GS9i8oCb49YioK",
     "name" : "FF",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0125YE0B000000000002"
+        "repoHandle" : "0100BA0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -44,27 +44,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "3oDFLaZMTFJbIzRZsVPDo4",
-    "name" : "AutoDeploy_CMD",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0125YE17000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/VCS_AutoDeployTest"
-  }, {
-    "id" : "fpKCz2JH5AsdKLVCh3tyQJ",
+    "id" : "ddQ3uumUeSclVzi3Auu2qQ",
     "name" : "TMS33RH64001",
     "type" : "AgentGroup",
     "metadata" : {
@@ -73,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0125YE25000000000002"
+        "repoHandle" : "0100BA25000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -83,5 +63,25 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "2cwQ1PlHKigdDK7rpzkQyH",
+    "name" : "AutoDeploy_CMD",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100BA17000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/VCS_AutoDeployTest"
   } ]
 }
