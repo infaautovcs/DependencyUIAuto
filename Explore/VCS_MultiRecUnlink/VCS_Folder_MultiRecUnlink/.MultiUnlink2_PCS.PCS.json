@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "6fgBqa0OaqohI9sWz788ol",
+    "id" : "aXsZGJxtHwFf26HJJQIYKf",
     "name" : "MultiUnlink2_PCS",
     "type" : "PCS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011IN30K000000000025"
+        "repoHandle" : "011IN30K00000000002B"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -38,8 +38,8 @@
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
