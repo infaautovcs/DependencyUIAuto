@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5DnytNnE3eue5ZrEwyQbI0",
+    "id" : "fRTNTZGmbyais09wUatQkw",
     "name" : "PCS_inlineActionDepen",
     "type" : "PCS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011IN30K000000000003"
+        "repoHandle" : "015AL30K000000000004"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "fGnhKiK49u5jQupVXbVmgw",
+    "id" : "786jqm8NT6xi4X6T1CUmAL",
     "name" : "TMS33RH64001",
     "type" : "AgentGroup",
     "metadata" : {
@@ -33,13 +33,13 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011IN325000000000009"
+        "repoHandle" : "015AL325000000000005"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
-        "contentType" : "Binary",
-        "documentState" : "COMPLETE"
+        "contentType" : "JSON",
+        "documentState" : "VALID"
       }
     },
     "path" : "/SYS"
