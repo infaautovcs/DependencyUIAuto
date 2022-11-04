@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "cUMqETDaKATerfsFAdOMCU",
+    "id" : "5BvuWtHp9sFcuhGEih2PQW",
     "name" : "dss_MultiPull2",
     "type" : "DSS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100930I000000000003"
+        "repoHandle" : "0100R80I000000000003"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "4EI5wjmKPTZk3kGGVXLNU0",
+    "id" : "7OKkFamS5UGeWEMzbexyS4",
     "name" : "ff_swati",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100930B000000000002"
+        "repoHandle" : "0100R80B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
