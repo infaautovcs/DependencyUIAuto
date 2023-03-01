@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "a5tZbVrCPq1iK9VZBwjbGf",
+    "id" : "3czNWWclBiQlD50PY52zQ1",
     "name" : "VCS_POD_VAL_TASK",
     "type" : "DRS",
     "metadata" : {
@@ -24,8 +24,8 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "7CXmNQPywCwgnGoNNepP6C",
-    "name" : "S8_SQLSERVER2K8",
+    "id" : "4IpNTZ6f74EgrLfFjvEjAt",
+    "name" : "CSV_TGT_UTF",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -37,15 +37,15 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
+        "description" : "CSV",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "5MqDPQaQ4ACdQdgFXKGysn",
-    "name" : "CSV_TGT_UTF",
+    "id" : "lyWgj3kpsGuhim90DpviWd",
+    "name" : "S8_SQLSERVER2K8",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -57,7 +57,7 @@
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "CSV",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
