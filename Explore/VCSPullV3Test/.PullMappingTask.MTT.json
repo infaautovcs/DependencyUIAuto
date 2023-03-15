@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "bCHWUbtVmCBlFn0KLSzhiX",
+    "id" : "5u2Y3DbzNsBgFlE8kADa0s",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0147B10Z000000000005"
+        "repoHandle" : "0147B10Z000000000006"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -35,7 +35,10 @@
       "repoInfo" : {
         "repoHandle" : "0147B11700000000000K"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
