@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "jPIL3dQICIzeV2ATwBycOI",
+    "id" : "7HKmPT6S4aZbbL9GegKXKj",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "015H830Z000000000003"
+        "repoHandle" : "01CHST0Z000000000002"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,27 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "46euxYQpxWAcMDABpYQpsE",
-    "name" : "cmd_VCSPullV3Test",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "015H8317000000000003"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "Multiple Lookup Condition",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/VCSPullV3Test"
-  }, {
-    "id" : "6S3tE8mG7KwfElNMDqmKY7",
+    "id" : "fm5zDCfxvkSiZ4b1B6bMaH",
     "name" : "Informatica Cloud Hosted Agent",
     "type" : "AgentGroup",
     "metadata" : {
@@ -64,7 +44,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "7SRa5DXnRF7cQETYTm2QqQ",
+    "id" : "6oHYlAhsFgjhejZwdmz4Qu",
     "name" : "ff",
     "type" : "Connection",
     "metadata" : {
@@ -73,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "015H830B000000000002"
+        "repoHandle" : "01CHST0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -83,5 +63,28 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "boTmAHpozuQjZw3lxdNn0x",
+    "name" : "cmd_VCSPullV3Test",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01CHST17000000000005"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Multiple Lookup Condition",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/VCSPullV3Test"
   } ]
 }
