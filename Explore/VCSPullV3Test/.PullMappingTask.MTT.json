@@ -35,7 +35,10 @@
       "repoInfo" : {
         "repoHandle" : "016GL117000000000004"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
