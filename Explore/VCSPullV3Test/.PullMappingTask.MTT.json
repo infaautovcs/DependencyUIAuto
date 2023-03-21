@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "evsSDKDGK2QlFxWOtMt4mW",
+    "id" : "2gDLOE0XW8BktKq3Y2VqaM",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016GL10Z000000000008"
+        "repoHandle" : "015H830Z00000000000V"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "l97OMza9gSEcrw11y3396N",
+    "id" : "46euxYQpxWAcMDABpYQpsE",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016GL117000000000004"
+        "repoHandle" : "015H8317000000000003"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -47,28 +47,8 @@
     },
     "path" : "/Explore/VCSPullV3Test"
   }, {
-    "id" : "6rsLXbMkgFRidLsZzzYuA3",
-    "name" : "ff",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "016GL10B000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "c7TMIFL1cWLfvGZXbv2Eot",
-    "name" : "ASHQVMW12001",
+    "id" : "6S3tE8mG7KwfElNMDqmKY7",
+    "name" : "Informatica Cloud Hosted Agent",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -76,13 +56,33 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW25000000000002"
+        "repoHandle" : "025000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "7SRa5DXnRF7cQETYTm2QqQ",
+    "name" : "FF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "015H830B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
