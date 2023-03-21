@@ -35,7 +35,10 @@
       "repoInfo" : {
         "repoHandle" : "016GL117000000000004"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
@@ -64,8 +67,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
-    "name" : "Informatica Cloud Hosted Agent",
+    "id" : "c7TMIFL1cWLfvGZXbv2Eot",
+    "name" : "ASHQVMW12001",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -73,11 +76,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "025000000000002"
+        "repoHandle" : "010OFW25000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
