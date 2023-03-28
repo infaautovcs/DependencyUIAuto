@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "bOUoU1xQU0kglYJTzAvyue",
+    "id" : "79TybkqTWKIdvUSlAvYMQO",
     "name" : "VCS_OtherLanguages_CMD_सह_ねがいします_çãâàá",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01056317000000000002"
+        "repoHandle" : "0100R917000000000002"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "1bYHNDjbh6pkdMTnunqtsU",
+    "id" : "6qysOeBixtVkj0ZqDE41oY",
     "name" : "SQL_Server_PodCertification",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0105630B000000000002"
+        "repoHandle" : "0100R90B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -44,7 +44,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "gxpeavIAf6fffjFVGTojWi",
+    "id" : "ixq1OyEyeURbSz4HsJLjGh",
     "name" : "FF_PodCertification",
     "type" : "Connection",
     "metadata" : {
@@ -53,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0105630B000000000003"
+        "repoHandle" : "0100R90B000000000003"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
