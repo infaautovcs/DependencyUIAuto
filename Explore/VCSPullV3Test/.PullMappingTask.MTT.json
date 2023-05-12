@@ -35,7 +35,10 @@
       "repoInfo" : {
         "repoHandle" : "010KOI17000000000003"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
