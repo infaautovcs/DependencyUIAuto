@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "j8EcTdFkS2zgBMORkKuykm",
+    "id" : "7kDRJMjd9K3c63D7z6M5iK",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016GL10Z00000000004I"
+        "repoHandle" : "01055L0Z000000000002"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,30 +24,7 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "l97OMza9gSEcrw11y3396N",
-    "name" : "cmd_VCSPullV3Test",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "016GL117000000000004"
-      },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
-      "additionalInfo" : {
-        "description" : "Multiple Lookup Condition",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/VCSPullV3Test"
-  }, {
-    "id" : "6rsLXbMkgFRidLsZzzYuA3",
+    "id" : "6ZMSb9Hf5P4ll7UQZNv3aw",
     "name" : "ff",
     "type" : "Connection",
     "metadata" : {
@@ -56,7 +33,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016GL10B000000000002"
+        "repoHandle" : "01055L0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -67,7 +44,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
+    "id" : "4coAXOYzlDdd0B2yYtYI6o",
     "name" : "Informatica Cloud Hosted Agent",
     "type" : "AgentGroup",
     "metadata" : {
@@ -86,5 +63,28 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "2TQe1EcMY6dhlvGAYWNRuv",
+    "name" : "cmd_VCSPullV3Test",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01055L17000000000005"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Multiple Lookup Condition",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/VCSPullV3Test"
   } ]
 }
