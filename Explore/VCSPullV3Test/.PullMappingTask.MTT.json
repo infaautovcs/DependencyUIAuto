@@ -44,8 +44,8 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "4coAXOYzlDdd0B2yYtYI6o",
-    "name" : "Informatica Cloud Hosted Agent",
+    "id" : "cNKojCYPbwAbe3PnGnToQR",
+    "name" : "ASPTFMGCPNLY01",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -53,11 +53,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "025000000000002"
+        "repoHandle" : "01007425000000000008"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -75,7 +75,10 @@
       "repoInfo" : {
         "repoHandle" : "01055L17000000000005"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
