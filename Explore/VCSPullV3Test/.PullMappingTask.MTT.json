@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "8bwm8qelUl9hyZFHHrvJu7",
+    "id" : "asyZFBQhC8gj2dwqNvCXyx",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "015H830Z00000000006Z"
+        "repoHandle" : "01001J0Z00000000000A"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,8 +24,28 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "5hbF4NesKTsl73Zr1Ef5cL",
-    "name" : "gridplatform-1",
+    "id" : "6QYigIf9Y2Ak8FScYckrIn",
+    "name" : "ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01001J0B000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "9iaFR1GsjFbeYiEPcCED08",
+    "name" : "Informatica Cloud Hosted Agent",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -33,18 +53,18 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01227E250000000000HV"
+        "repoHandle" : "025000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "46euxYQpxWAcMDABpYQpsE",
+    "id" : "26vRLMwKn7YgCgVagwGIm0",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -53,7 +73,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "015H8317000000000003"
+        "repoHandle" : "01001J17000000000004"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -66,25 +86,5 @@
       }
     },
     "path" : "/Explore/VCSPullV3Test"
-  }, {
-    "id" : "7SRa5DXnRF7cQETYTm2QqQ",
-    "name" : "FF",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "015H830B000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
   } ]
 }
