@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "a3S4U3o6agPdm1z6SIgnYw",
+    "id" : "gpLfRdk8uUEdEH3g4w1maK",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0170UK0Z00000000001F"
+        "repoHandle" : "015H830Z0000000000AH"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -24,7 +24,27 @@
   },
   "dataFileExtension" : "zip",
   "objectRefs" : [ {
-    "id" : "23HjHpz6fJ0gvVbFSK1NeK",
+    "id" : "5hbF4NesKTsl73Zr1Ef5cL",
+    "name" : "gridplatform-1",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E250000000000HV"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "7SRa5DXnRF7cQETYTm2QqQ",
     "name" : "FF",
     "type" : "Connection",
     "metadata" : {
@@ -33,7 +53,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0170UK0B000000000002"
+        "repoHandle" : "015H830B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -44,27 +64,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
-    "name" : "Informatica Cloud Hosted Agent",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "025000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "2FQoYvNDs7kdDzNqxKqGkN",
+    "id" : "5QXDgV7svopgZ4avQpm9eN",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -73,7 +73,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0170UK17000000000003"
+        "repoHandle" : "015H83170000000000DH"
       },
       "contextAttributes" : [ {
         "name" : "id",
