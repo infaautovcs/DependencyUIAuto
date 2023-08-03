@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-08-03T04:25:37.088Z",
+  "updateTime" : "2023-08-03T04:26:13.586Z",
   "objectRefs" : [ {
     "id" : "6S3tE8mG7KwfElNMDqmKY7",
     "name" : "Informatica Cloud Hosted Agent",
@@ -76,10 +76,7 @@
       "repoInfo" : {
         "repoHandle" : "015H83170000000000DH"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
