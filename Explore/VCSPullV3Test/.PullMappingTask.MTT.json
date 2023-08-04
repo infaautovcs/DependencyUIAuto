@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "4Yy3cFuR7YRbFhreH6oNI2",
+    "id" : "3DMPrRQOTOTbnOxA8BUjEN",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "015H830Z0000000000BV"
+        "repoHandle" : "015H830Z0000000000BW"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-08-04T12:08:08.371Z",
+  "updateTime" : "2023-08-04T13:15:09.273Z",
   "objectRefs" : [ {
     "id" : "6S3tE8mG7KwfElNMDqmKY7",
     "name" : "Informatica Cloud Hosted Agent",
