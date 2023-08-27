@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "eutbjWGvsmkd1SEcafNLst",
+    "id" : "4JWkiWpam2jcRRxYBeRA0o",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016JLA0Z00000000000D"
+        "repoHandle" : "0179UZ0Z000000000007"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,49 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-08-27T09:09:57.188Z",
+  "updateTime" : "2023-08-27T09:16:14.378Z",
   "objectRefs" : [ {
-    "id" : "5hbF4NesKTsl73Zr1Ef5cL",
-    "name" : "gridplatform-1",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01227E250000000000HV"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "8SQCJzQmd2Xj85TRnoS2Oi",
-    "name" : "ff",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "016JLA0B000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "7LxzFeVOasrdHgf4p12gg8",
+    "id" : "3c5pQbVbXISg8HjkOw9fsK",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -74,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016JLA17000000000005"
+        "repoHandle" : "0179UZ17000000000003"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -87,5 +47,45 @@
       }
     },
     "path" : "/Explore/VCSPullV3Test"
+  }, {
+    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
+    "name" : "Informatica Cloud Hosted Agent",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "025000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "64ZZ02fTka8erXivXbPhMt",
+    "name" : "ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0179UZ0B000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
   } ]
 }
