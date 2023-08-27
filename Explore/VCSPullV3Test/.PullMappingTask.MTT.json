@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5FH37U45vy4dO2XxnFUO0F",
+    "id" : "eutbjWGvsmkd1SEcafNLst",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0179UZ0Z000000000006"
+        "repoHandle" : "016JLA0Z00000000000D"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,9 +23,29 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-08-27T08:56:26.601Z",
+  "updateTime" : "2023-08-27T09:08:07.528Z",
   "objectRefs" : [ {
-    "id" : "3c5pQbVbXISg8HjkOw9fsK",
+    "id" : "8SQCJzQmd2Xj85TRnoS2Oi",
+    "name" : "ff",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "016JLA0B000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "7LxzFeVOasrdHgf4p12gg8",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -34,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0179UZ17000000000003"
+        "repoHandle" : "016JLA17000000000005"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -48,7 +68,7 @@
     },
     "path" : "/Explore/VCSPullV3Test"
   }, {
-    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
+    "id" : "6S3tE8mG7KwfElNMDqmKY7",
     "name" : "Informatica Cloud Hosted Agent",
     "type" : "AgentGroup",
     "metadata" : {
@@ -64,26 +84,6 @@
         "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "64ZZ02fTka8erXivXbPhMt",
-    "name" : "ff",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0179UZ0B000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
