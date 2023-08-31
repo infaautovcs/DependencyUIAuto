@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "jEDfBFwhtaKcgkR5TnJdYT",
+    "id" : "eTk53vFBgYslIkDUJMRmyz",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011V980Z000000000002"
+        "repoHandle" : "016JLA0Z00000000000E"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,29 +23,29 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-08-29T17:58:01.650Z",
+  "updateTime" : "2023-08-31T22:57:34.892Z",
   "objectRefs" : [ {
-    "id" : "9IDebr0UqwPgFRO2SVDmAu",
-    "name" : "FEDRAMPPTFM",
-    "type" : "AgentGroup",
+    "id" : "8SQCJzQmd2Xj85TRnoS2Oi",
+    "name" : "ff",
+    "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011IN3250000000007QU"
+        "repoHandle" : "016JLA0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "c8OUQDTalEMjBsNuDYx2AQ",
+    "id" : "7LxzFeVOasrdHgf4p12gg8",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -54,7 +54,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011V9817000000000004"
+        "repoHandle" : "016JLA17000000000005"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -68,22 +68,22 @@
     },
     "path" : "/Explore/VCSPullV3Test"
   }, {
-    "id" : "ddlLD48gqwGi9TGZq9qB0k",
-    "name" : "ff",
-    "type" : "Connection",
+    "id" : "6S3tE8mG7KwfElNMDqmKY7",
+    "name" : "Informatica Cloud Hosted Agent",
+    "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "011V980B000000000002"
+        "repoHandle" : "025000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     },
     "path" : "/SYS"
