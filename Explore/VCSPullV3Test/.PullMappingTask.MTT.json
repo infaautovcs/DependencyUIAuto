@@ -23,10 +23,10 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-09-16T05:39:22.601Z",
+  "updateTime" : "2023-09-16T05:41:03.862Z",
   "objectRefs" : [ {
-    "id" : "idKvflAyOIXbBOrfWQTweE",
-    "name" : "Informatica Cloud Hosted Agent",
+    "id" : "3PbzKZyommne76qTTBNyIh",
+    "name" : "invaznightly01",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -34,11 +34,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "025000000000002"
+        "repoHandle" : "01026R250000000007Z3"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -76,7 +76,10 @@
       "repoInfo" : {
         "repoHandle" : "010JP417000000000003"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
