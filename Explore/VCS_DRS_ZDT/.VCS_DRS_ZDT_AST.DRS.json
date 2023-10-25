@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "8M7mfT2GLqZjliFX2q0XU8",
+    "id" : "3J2M8WvckUZlv6D3VTVWCQ",
     "name" : "VCS_DRS_ZDT_AST",
     "type" : "DRS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01026R0G00000000018L"
+        "repoHandle" : "01000G0G0000000002SG"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,9 +23,29 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-10-25T00:05:31.322Z",
+  "updateTime" : "2023-10-25T00:06:11.341Z",
   "objectRefs" : [ {
-    "id" : "5StgTfwmAzPflmfgLsa2iU",
+    "id" : "3xW5PLfjcqKiNmIyRGpGqn",
+    "name" : "CSV_TGT_UTF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01000G0B0000000005M0"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "CSV",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "l947URQxvill5R9SIDpkUz",
     "name" : "S8_SQLSERVER2K8",
     "type" : "Connection",
     "metadata" : {
@@ -34,31 +54,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01026R0B00000000001K"
+        "repoHandle" : "01000G0B000000000TOK"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "2fi8iWeENbGbyRMPV1R808",
-    "name" : "CSV_TGT_UTF122121",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01026R0B0000000001EP"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "CSV",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
