@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5x0f17ekhycelMkaNOHsYQ",
+    "id" : "buaM3XpUsesg7w6d41la8P",
     "name" : "VCS_POD_VAL_TASK",
     "type" : "DRS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100010G000000000002"
+        "repoHandle" : "01005Y0G000000000002"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,29 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-10-25T10:24:18.048Z",
+  "updateTime" : "2023-10-25T10:24:26.967Z",
   "objectRefs" : [ {
-    "id" : "cXwixTAiGG8j7HObd5hCuf",
-    "name" : "S8_SQLSERVER2K8",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "0100010B000000000003"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "5t3YIt6VhyTbFKbUgKmLuB",
+    "id" : "17IBvlBZ4mUlQODlo5u7y0",
     "name" : "CSV_TGT_UTF",
     "type" : "Connection",
     "metadata" : {
@@ -54,11 +34,31 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100010B000000000002"
+        "repoHandle" : "01005Y0B000000000003"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "CSV",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "6xJYA0azLK3dpSBhqRJMAX",
+    "name" : "S8_SQLSERVER2K8",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01005Y0B000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
