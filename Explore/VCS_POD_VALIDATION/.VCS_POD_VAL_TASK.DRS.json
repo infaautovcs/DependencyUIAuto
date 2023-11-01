@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "cPM6DpYChMVbLku81HyoWc",
+    "id" : "81nlMIqKtKkfEIf548lka6",
     "name" : "VCS_POD_VAL_TASK",
     "type" : "DRS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000G0G0000000007RT"
+        "repoHandle" : "0100XO0G0000000007OE"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,29 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-11-01T19:45:13.657Z",
+  "updateTime" : "2023-11-01T20:16:26.127Z",
   "objectRefs" : [ {
-    "id" : "3xW5PLfjcqKiNmIyRGpGqn",
-    "name" : "CSV_TGT_UTF",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01000G0B0000000005M0"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "CSV",
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "l947URQxvill5R9SIDpkUz",
+    "id" : "22tt3KNCesfbjuDGpO6yWB",
     "name" : "S8_SQLSERVER2K8",
     "type" : "Connection",
     "metadata" : {
@@ -54,11 +34,31 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01000G0B000000000TOK"
+        "repoHandle" : "0100XO0B000000000QTO"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "1PgdUuA6a3skG8cHtHo8oS",
+    "name" : "CSV_TGT_UTF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100XO0B000000000JG1"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "CSV",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
