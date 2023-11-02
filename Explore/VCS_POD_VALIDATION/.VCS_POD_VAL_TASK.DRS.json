@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "81nlMIqKtKkfEIf548lka6",
+    "id" : "8UZo71VbElflrKXxwSqPoZ",
     "name" : "VCS_POD_VAL_TASK",
     "type" : "DRS",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100XO0G0000000007OE"
+        "repoHandle" : "0100010G000000000002"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,9 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-11-02T13:16:27.931Z",
+  "updateTime" : "2023-11-02T13:30:37.783Z",
   "objectRefs" : [ {
-    "id" : "22tt3KNCesfbjuDGpO6yWB",
+    "id" : "7QihHwlD185fjRawYLWCm2",
     "name" : "S8_SQLSERVER2K8",
     "type" : "Connection",
     "metadata" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100XO0B000000000QTO"
+        "repoHandle" : "0100010B000000000004"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -45,7 +45,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "1PgdUuA6a3skG8cHtHo8oS",
+    "id" : "0foyqo4SrS9jCOFnZbuzyQ",
     "name" : "CSV_TGT_UTF",
     "type" : "Connection",
     "metadata" : {
@@ -54,11 +54,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100XO0B000000000JG1"
+        "repoHandle" : "0100010B000000000003"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "CSV",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
