@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "bKNUZexx6YwhuebIQIrjml",
+    "id" : "7i210ghOpUedfSGRgWeewH",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016J2G0Z00000000000C"
+        "repoHandle" : "017DZV0Z00000000003N"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,30 +23,27 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2023-12-16T07:24:17.810Z",
+  "updateTime" : "2023-12-16T07:39:43.702Z",
   "objectRefs" : [ {
-    "id" : "1nnXqeNKHoliITz8lykMud",
-    "name" : "cmd_VCSPullV3Test",
-    "type" : "DTEMPLATE",
+    "id" : "9s9yYqI1a8neXYnbhw7qq8",
+    "name" : "ff",
+    "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016J2G17000000000005"
+        "repoHandle" : "017DZV0B000000000002"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "Multiple Lookup Condition",
+        "description" : null,
         "contentType" : "JSON",
-        "documentState" : "VALID"
+        "documentState" : "COMPLETE"
       }
     },
-    "path" : "/Explore/VCSPullV3Test"
+    "path" : "/SYS"
   }, {
     "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
     "name" : "Informatica Cloud Hosted Agent",
@@ -68,24 +65,27 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "ip7VbFixs07keOlRYLpTWv",
-    "name" : "ff",
-    "type" : "Connection",
+    "id" : "4pbKzxMo48PkXvmLkeP7Y7",
+    "name" : "cmd_VCSPullV3Test",
+    "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016J2G0B000000000002"
+        "repoHandle" : "017DZV17000000000003"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
-        "description" : null,
+        "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     },
-    "path" : "/SYS"
+    "path" : "/Explore/VCSPullV3Test"
   } ]
 }
