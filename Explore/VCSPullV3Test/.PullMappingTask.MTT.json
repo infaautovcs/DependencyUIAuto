@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-01-21T02:01:02.342Z",
+  "updateTime" : "2024-01-21T02:01:29.337Z",
   "objectRefs" : [ {
     "id" : "6JaJqyRiXY8enhLh4rSdS0",
     "name" : "cmd_VCSPullV3Test",
@@ -36,10 +36,7 @@
       "repoInfo" : {
         "repoHandle" : "0101XG17000000000005"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
