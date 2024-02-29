@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "0G1AoE4nCned1ByTjYyvkH",
+    "id" : "0SegTILy5gSlzJ2RJ4PXKK",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016PI10Z00000000008U"
+        "repoHandle" : "016PI10Z00000000008V"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,31 +23,8 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-02-29T19:37:45.755Z",
+  "updateTime" : "2024-02-29T19:40:28.299Z",
   "objectRefs" : [ {
-    "id" : "7bSBAPAk5NKfK9pOQVlfeV",
-    "name" : "cmd_VCSPullV3Test",
-    "type" : "DTEMPLATE",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "016PI117000000000003"
-      },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
-      "additionalInfo" : {
-        "description" : "Multiple Lookup Condition",
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/Explore/VCSPullV3Test"
-  }, {
     "id" : "3FzSb9skTKmiKeEyfxATSn",
     "name" : "FF",
     "type" : "Connection",
@@ -67,6 +44,29 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "3kDJIv6BQLVeXKU49KDaoS",
+    "name" : "cmd_VCSPullV3Test",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "016PI1170000000000BC"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Multiple Lookup Condition",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/VCSPullV3Test"
   }, {
     "id" : "6S3tE8mG7KwfElNMDqmKY7",
     "name" : "Informatica Cloud Hosted Agent",
