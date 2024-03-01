@@ -1,22 +1,22 @@
 {
   "objectInfo" : {
-    "id" : "9ngWibntq2Of9peqkYjr2q",
-    "name" : "drs_MultiPull1",
-    "type" : "DRS",
+    "id" : "3FkSTGGWQmPld2blj1p5Am",
+    "name" : "MappingTask2",
+    "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100740G00000000000P"
+        "repoHandle" : "0100740Z00000000001L"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
@@ -25,28 +25,48 @@
   "dataFileExtension" : "zip",
   "updateTime" : "2024-03-01T10:38:30.064Z",
   "objectRefs" : [ {
-    "id" : "58y45PUZCyti0IIZpTa82z",
-    "name" : "RP_Sql_Server201",
-    "type" : "Connection",
+    "id" : "4coAXOYzlDdd0B2yYtYI6o",
+    "name" : "Informatica Cloud Hosted Agent",
+    "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100740B00000000000Z"
+        "repoHandle" : "025000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : null,
+        "description" : "",
         "contentType" : "JSON",
-        "documentState" : "COMPLETE"
+        "documentState" : "VALID"
       }
     },
     "path" : "/SYS"
   }, {
-    "id" : "05du81sSPqZfpEeRkVLVaz",
-    "name" : "FF",
+    "id" : "41qGA6R33YCd7QOmNx94wh",
+    "name" : "Mapping1",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0100741700000000002P"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Default"
+  }, {
+    "id" : "2GBiVFEoGEMlxAIjVs0WmI",
+    "name" : "salesforce",
     "type" : "Connection",
     "metadata" : {
       "modelVersion" : {
@@ -54,11 +74,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100740B00000000000I"
+        "repoHandle" : "0100740B000000000030"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "test desc",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
