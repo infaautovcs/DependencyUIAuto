@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "3wztsLvfVoYb1iQ6fTyoOM",
+    "id" : "3lzJ9gnpjiHfeaFAXOckWI",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016PI10Z0000000000AL"
+        "repoHandle" : "016PI10Z0000000000AM"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-03-19T03:44:23.268Z",
+  "updateTime" : "2024-03-19T04:37:54.339Z",
   "objectRefs" : [ {
     "id" : "3FzSb9skTKmiKeEyfxATSn",
     "name" : "FF",
@@ -56,7 +56,10 @@
       "repoInfo" : {
         "repoHandle" : "016PI1170000000000BC"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
