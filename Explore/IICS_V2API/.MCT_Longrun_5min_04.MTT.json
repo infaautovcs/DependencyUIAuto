@@ -1,0 +1,108 @@
+{
+  "objectInfo" : {
+    "id" : "aAOfIoAQ0O9jM3VXGqR06z",
+    "name" : "MCT_Longrun_5min_04",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E0Z000000000717"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "AzureSOQL map to flat file.\r\nruntime env set in configure file.\r\n",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "zip",
+  "updateTime" : "2024-03-27T04:57:16.273Z",
+  "objectRefs" : [ {
+    "id" : "24Lfw3ShCmFiukrCoMGjSu",
+    "name" : "V2API_Target",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E0B000000001DHD"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "2YlMAsYoxUjbfSFbaTXlOR",
+    "name" : "V2API_Source",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E0B000000001DHE"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Azure_SQL_Server",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "0uKa0OF3oE8hFeolGS49wW",
+    "name" : "V2API_Mapping02",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E17000000001ELR"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "DO NOT CHANGE THIS !!!\nAzure MS-SQL mapping to flat file, This mapping is used for V2 API testing.\nIf agent is linux,  target directory set to /tmp, if agent is windows target directory set to c:/temp. (handled by automation script)\n\n",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/IICS_V2API"
+  }, {
+    "id" : "2UbCMybC0HmlnA1tDJfWUS",
+    "name" : "psvrlxfrs2002",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01227E2500000000007D"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  } ]
+}
