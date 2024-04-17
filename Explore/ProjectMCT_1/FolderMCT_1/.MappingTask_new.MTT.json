@@ -1,29 +1,29 @@
 {
   "objectInfo" : {
-    "id" : "a4udyOXcYjpkQgTvEeKwo6",
-    "name" : "auto_sqlserver_Joiner_csv",
-    "type" : "DTEMPLATE",
+    "id" : "6lY0UWu6NwAdgYmr02TLmc",
+    "name" : "MappingTask_new",
+    "type" : "MTT",
     "metadata" : {
       "modelVersion" : {
         "major" : 0,
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW170000000043CC"
+        "repoHandle" : "010OFW0Z000000000AB3"
       },
       "contextAttributes" : [ {
         "name" : "id",
         "value" : "@1"
       } ],
       "additionalInfo" : {
-        "description" : "Mapping",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-04-17T08:10:00.871Z",
+  "updateTime" : "2024-04-17T08:10:00.870Z",
   "objectRefs" : [ {
     "id" : "fNhRQK1PmKggEPeFLuSwcU",
     "name" : "CSV_TGT_UTF",
@@ -64,5 +64,48 @@
       }
     },
     "path" : "/SYS"
+  }, {
+    "id" : "c7TMIFL1cWLfvGZXbv2Eot",
+    "name" : "ASHQVMW12001",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010OFW25000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "a4udyOXcYjpkQgTvEeKwo6",
+    "name" : "auto_sqlserver_Joiner_csv",
+    "type" : "DTEMPLATE",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010OFW170000000043CC"
+      },
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "Mapping",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/ProjectMCT_1/FolderMCT_1"
   } ]
 }
