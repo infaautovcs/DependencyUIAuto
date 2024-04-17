@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-04-16T10:08:17.683Z",
+  "updateTime" : "2024-04-17T07:30:21.945Z",
   "objectRefs" : [ {
     "id" : "6kAxMU1SqJwgbBnBKBIdmB",
     "name" : "Mapping_sequence",
@@ -36,7 +36,10 @@
       "repoInfo" : {
         "repoHandle" : "010OFW170000000049RG"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
