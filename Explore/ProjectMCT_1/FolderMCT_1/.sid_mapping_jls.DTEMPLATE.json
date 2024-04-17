@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
-    "id" : "a4udyOXcYjpkQgTvEeKwo6",
-    "name" : "auto_sqlserver_Joiner_csv",
+    "id" : "fOTlx03sbOSezC18KPw7uQ",
+    "name" : "sid_mapping_jls",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "010OFW170000000043CC"
+        "repoHandle" : "010OFW17000000002SPT"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -25,26 +25,6 @@
   "dataFileExtension" : "zip",
   "updateTime" : "2024-04-17T08:06:57.514Z",
   "objectRefs" : [ {
-    "id" : "fNhRQK1PmKggEPeFLuSwcU",
-    "name" : "CSV_TGT_UTF",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "010OFW0B00000000014N"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : "CSV",
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
     "id" : "0ftekzHvHn3bw8DKJr74cC",
     "name" : "S8_SQLSERVER2K8",
     "type" : "Connection",
@@ -59,6 +39,26 @@
       "contextAttributes" : null,
       "additionalInfo" : {
         "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "fNhRQK1PmKggEPeFLuSwcU",
+    "name" : "CSV_TGT_UTF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010OFW0B00000000014N"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "CSV",
         "contentType" : "JSON",
         "documentState" : "COMPLETE"
       }
