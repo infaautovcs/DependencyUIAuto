@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-04-20T02:00:35.215Z",
+  "updateTime" : "2024-04-20T02:01:09.230Z",
   "objectRefs" : [ {
     "id" : "7Mc495OS5IejkJmv4eieSS",
     "name" : "cmd_VCSPullV3Test",
@@ -36,7 +36,10 @@
       "repoInfo" : {
         "repoHandle" : "018MF917000000000003"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
@@ -45,8 +48,8 @@
     },
     "path" : "/Explore/VCSPullV3Test"
   }, {
-    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
-    "name" : "Informatica Cloud Hosted Agent",
+    "id" : "c7TMIFL1cWLfvGZXbv2Eot",
+    "name" : "ASHQVMW12001",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -54,11 +57,11 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "025000000000002"
+        "repoHandle" : "010OFW25000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
-        "description" : "",
+        "description" : null,
         "contentType" : "JSON",
         "documentState" : "VALID"
       }
