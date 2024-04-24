@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "8faO00SmVRkkFbE95SV78T",
+    "id" : "8xAkvOymCTghoBUa9btOWi",
     "name" : "AutoTaskImportExport",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01227E0Z00000000078L"
+        "repoHandle" : "010OFW0Z0000000006I4"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,9 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-03-20T07:50:52.942Z",
+  "updateTime" : "2024-04-24T06:49:07.406Z",
   "objectRefs" : [ {
-    "id" : "8MRfLkEEdDycr5i9sDSeAy",
+    "id" : "0VfjOuc4iYObm7Ko4lKyo8",
     "name" : "AutoMappingImportExport",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -34,9 +34,12 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01227E17000000001RZK"
+        "repoHandle" : "010OFW17000000003EFZ"
       },
-      "contextAttributes" : null,
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
       "additionalInfo" : {
         "description" : "Extracts all or a subset of data from a source and loads it to a dynamically created target.\n\nIf you create a relational target, the Mapping task inserts data into the target table the first time it runs. Subsequent runs can load data using update or upsert operations. If you create a flat file target, the Mapping task re-creates the target file each time it runs.",
         "contentType" : "JSON",
@@ -45,8 +48,8 @@
     },
     "path" : "/Explore/AutoSPIE1"
   }, {
-    "id" : "0s3E0QAzvzefVDlfWx2I8B",
-    "name" : "ASHQVMW12001",
+    "id" : "4Y6WGDzG0zqb639jzzdTAM",
+    "name" : "MFWPF1122SB-AAD",
     "type" : "AgentGroup",
     "metadata" : {
       "modelVersion" : {
@@ -54,7 +57,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01227E250000000000PF"
+        "repoHandle" : "010OFW25000000000087"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -65,7 +68,7 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "f4LkB0Ivvsnbnd3winP5cR",
+    "id" : "ihwX8ycS1WkeOoCA1p2WEH",
     "name" : "AutoConn-1203600263",
     "type" : "Connection",
     "metadata" : {
@@ -74,7 +77,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01227E0B000000005N6D"
+        "repoHandle" : "010OFW0B000000009UB7"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
