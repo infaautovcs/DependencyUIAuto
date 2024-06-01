@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5aIuFNYzOzRecUeGl2nR4O",
+    "id" : "d8IMNZUV0ylbwodX9E8NKv",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01055L0Z000000000012"
+        "repoHandle" : "010JP40Z00000000003T"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,29 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-06-01T10:04:20.628Z",
+  "updateTime" : "2024-06-01T10:45:08.839Z",
   "objectRefs" : [ {
-    "id" : "6ZMSb9Hf5P4ll7UQZNv3aw",
-    "name" : "ff",
-    "type" : "Connection",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01055L0B000000000002"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "COMPLETE"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "4coAXOYzlDdd0B2yYtYI6o",
+    "id" : "idKvflAyOIXbBOrfWQTweE",
     "name" : "Informatica Cloud Hosted Agent",
     "type" : "AgentGroup",
     "metadata" : {
@@ -65,7 +45,27 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "2TQe1EcMY6dhlvGAYWNRuv",
+    "id" : "2y1lrs2in4fgivTaO7GJML",
+    "name" : "FF",
+    "type" : "Connection",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "010JP40B000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "lFhiB00ghgzfiGUL9SbaMy",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -74,7 +74,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "01055L17000000000005"
+        "repoHandle" : "010JP417000000000003"
       },
       "contextAttributes" : [ {
         "name" : "id",
