@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "bTgmTuRN46Bej48xeVxi2B",
+    "id" : "9drJYhU8LGnlUs1hJXadif",
     "name" : "jlsdi_reg_mapping",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100741700000000003H"
+        "repoHandle" : "011IN31700000000000M"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,9 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-05-21T08:16:40.217Z",
+  "updateTime" : "2024-06-11T11:09:54.479Z",
   "objectRefs" : [ {
-    "id" : "5vxuDnFciSuiBGaJfI63cD",
+    "id" : "kFy3I96wQ06gdDLgVpQ1yt",
     "name" : "oracle_jlsdi_reg",
     "type" : "Connection",
     "metadata" : {
@@ -34,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "0100740B000000000045"
+        "repoHandle" : "011IN30B0000000001QL"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
