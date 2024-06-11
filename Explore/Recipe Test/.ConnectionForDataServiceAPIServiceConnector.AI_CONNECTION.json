@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "0f4cI9oXzPSe62ZgrtwDwL",
+    "name" : "ConnectionForDataServiceAPIServiceConnector",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0CR3aaa-gt-3285561-2024-05-08T06:34:38.992Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "This connection uses DataServiceAPIServiceConnector",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-06-11T05:23:54.320Z",
+  "objectRefs" : [ {
+    "id" : "fJ6FsX68jI1fnSNYLZ5dMG",
+    "name" : "DataServiceAPIServiceConnector",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "lRR4-gt-3301346-2024-05-08T06:34:38.192Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Service Connector for Job REST API",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Recipe Test"
+  } ]
+}

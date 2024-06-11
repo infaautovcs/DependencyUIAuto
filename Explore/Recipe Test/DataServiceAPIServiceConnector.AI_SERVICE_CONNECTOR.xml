@@ -1,0 +1,321 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>lRR4-gt-3301346-2024-05-08T06:34:38.192Z::svc.xml</types1:EntryId>
+      <types1:Name>DataServiceAPIServiceConnector</types1:Name>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description>Service Connector for Job REST API</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>platformqa</types1:CreatedBy>
+      <types1:CreationDate>2024-05-08T06:34:38Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="DataServiceAPIServiceConnector"
+                            label=""
+                            name="DataServiceAPIServiceConnector"
+                            uuid="782fe1a2-75ac-43f2-97db-2f443a8ddda6">
+            <description>Service Connector for Job REST API</description>
+            <tags/>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"/>
+            <actions>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="Login"
+                       maxRedirects="100"
+                       name="Login"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description="API type"
+                                name="@type"
+                                required="true"
+                                testWith="login"
+                                type="string"/>
+                     <parameter name="username" required="true" testWith="b2bfis" type="string"/>
+                     <parameter name="password"
+                                required="true"
+                                testWith="Test@1234"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="commaSeparated"
+                                        url="https://qa-ma.rel.infaqa.com/ma/api/v2/user/login"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <body generateUsing="JSON" preserveJsonStringFormatting="true"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description=""
+                            name="out_sessionId"
+                            property="icSessionId"
+                            type="string"/>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="InvokeDataServiceAPI"
+                       maxRedirects="100"
+                       name="InvokeDataServiceAPI"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label=""
+                                name="sessionId"
+                                required="true"
+                                testWith="8L87fHR2jARfSjsGKeiTOj"
+                                type="string"/>
+                     <parameter description=""
+                                label=""
+                                name="agentGroupId"
+                                required="true"
+                                testWith="010BM025000000000007"
+                                type="string"/>
+                     <parameter description=""
+                                label=""
+                                name="input"
+                                required="false"
+                                testWith="{&#xA;        &#34;name&#34;: null,&#xA;        &#34;type&#34;: &#34;FILE&#34;,&#xA;        &#34;value&#34;: &#34;/data/podDataSets/ADT_A01_v26_s4_ERROR_FREE.txt&#34;&#xA;    }"
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">ports</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label=""
+                                name="output"
+                                required="false"
+                                testWith="{&#xA;        &#34;name&#34;: null,&#xA;        &#34;type&#34;: &#34;FILE&#34;,&#xA;        &#34;value&#34;: &#34;/data/podDataSets/&#34;&#xA;    }"
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">ports</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label=""
+                                name="serviceParameters"
+                                required="false"
+                                testWith=""
+                                type="objectlist">
+                        <options>
+                           <option name="referenceTo">ports</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label=""
+                                name="additionalInputs"
+                                required="false"
+                                testWith=""
+                                type="objectlist">
+                        <options>
+                           <option name="referenceTo">ports</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label=""
+                                name="additionalOutputs"
+                                required="false"
+                                testWith="[&#xA;        {&#xA;            &#34;name&#34;: &#34;Errors&#34;,&#xA;            &#34;type&#34;: &#34;BUFFER&#34;,&#xA;            &#34;value&#34;: &#34;/data/podDataSets/&#34;&#xA;        },&#xA;        {&#xA;            &#34;name&#34;: &#34;ErrorsFound&#34;,&#xA;            &#34;type&#34;: &#34;BUFFER&#34;,&#xA;            &#34;value&#34;: &#34;/data/podDataSets/&#34;&#xA;        }&#xA;]"
+                                type="objectlist">
+                        <options>
+                           <option name="referenceTo">ports</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label=""
+                                name="serviceName"
+                                required="true"
+                                testWith="HL7_2_6_ADT_A01_Parser"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="commaSeparated"
+                                        url="https://qa-pod1-cvm.rel.infaqa.com/DSRepo/rest/api/v1/services/run/{$serviceName}"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json</header>
+                           <header name="IDS-SESSION-ID">{$sessionId}</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON" preserveJsonStringFormatting="true"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description=""
+                            name="out_output"
+                            property="output"
+                            type="string"/>
+                     <field description=""
+                            name="out_message"
+                            property="message"
+                            type="string"/>
+                     <field description=""
+                            entireResponse="true"
+                            name="out_response"
+                            type="string"/>
+                     <field description="" name="out_additionalOutput" type="string">
+                        <xquery>{/root/additionalOutputs[name = 'ErrorsFound']/value}</xquery>
+                     </field>
+                  </output>
+               </action>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="Logout"
+                       maxRedirects="100"
+                       name="Logout"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter name="sessionId"
+                                nogen="true"
+                                required="false"
+                                testWith="0fO82rUW0Mol"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated"
+                                        url="https://qa-ma.rel.infaqa.com/saas/public/core/v3/logout"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json</header>
+                           <header name="INFA-SESSION-ID">{$sessionId}</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="JSON" preserveJsonStringFormatting="true"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output/>
+               </action>
+            </actions>
+            <objects>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="root">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="lastName" nullable="true" required="false" type="string"/>
+                     <field name="securityAnswer"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="timezone" nullable="true" required="false" type="string"/>
+                     <field name="roles" nullable="true" required="false" type="objectlist">
+                        <options>
+                           <option name="referenceTo">roles</option>
+                           <option name="relationshipName">Child</option>
+                        </options>
+                     </field>
+                     <field name="description"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="sfUsername"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="title" nullable="true" required="false" type="string"/>
+                     <field name="uuid" nullable="true" required="false" type="string"/>
+                     <field name="orgId" nullable="true" required="false" type="int"/>
+                     <field name="emails" nullable="true" required="false" type="string"/>
+                     <field name="password" nullable="true" required="false" type="string"/>
+                     <field name="serverUrl" nullable="true" required="false" type="string"/>
+                     <field name="id" nullable="true" required="false" type="double"/>
+                     <field name="updatedBy" nullable="true" required="false" type="string"/>
+                     <field name="securityQuestion"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="updateTime"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="firstName" nullable="true" required="false" type="string"/>
+                     <field name="createTime"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="createdBy" nullable="true" required="false" type="string"/>
+                     <field name="phone" nullable="true" required="false" type="double"/>
+                     <field name="usergroups"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="icSessionId"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="name" nullable="true" required="false" type="string"/>
+                     <field name="forceChangePassword"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="spiUrl" nullable="true" required="false" type="string"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="roles">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="name" nullable="true" required="false" type="string"/>
+                     <field name="description"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="icSessionId">
+                  <description/>
+                  <detail>
+                     <field name="icSessionId"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="ports">
+                  <description/>
+                  <detail>
+                     <field name="type" nullable="true" required="false" type="string"/>
+                     <field name="value" nullable="true" required="false" type="string"/>
+                     <field name="name" nullable="true" required="false" type="string"/>
+                  </detail>
+               </processObject>
+            </objects>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>fJ6FsX68jI1fnSNYLZ5dMG</types1:GUID>
+      <types1:DisplayName>DataServiceAPIServiceConnector</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-06-11T05:23:52.942Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

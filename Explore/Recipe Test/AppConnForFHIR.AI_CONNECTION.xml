@@ -1,0 +1,45 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>nKf3eFhBJQWSwxF-gt-3285585-2024-05-08T06:34:39.214Z::conn.xml</types1:EntryId>
+      <types1:Name>AppConnForFHIR</types1:Name>
+      <types1:ParentFlowIds>3fZPE4zlrMZgpDq-gt-3285595-2024-05-08T06:34:39.872Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:tavubugwdev8.informatica.com_old</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>platformqa</types1:CreatedBy>
+      <types1:CreationDate>2024-05-08T06:34:39Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="AppConnForFHIR"
+                     label="AppConnForFHIR"
+                     name="AppConnForFHIR">
+            <description/>
+            <tags>.agent:tavubugwdev8.informatica.com_old</tags>
+            <agent>tavubugwdev8.informatica.com_old</agent>
+            <attributes>
+               <attribute encrypted="false" name="host" value="invvector01"/>
+               <attribute encrypted="false" name="port" value="5555"/>
+            </attributes>
+            <businessConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                               agentOnly="false"
+                               connectorPath="project:/rt.connector/FHIR_SC/FHIR_SC_svcDef.xml"
+                               guid="9CDx58N1A3qbkCfJXjKCM6"
+                               name="FHIR-SC"
+                               supportsConnectionTest="false"
+                               uuid="d680efa4-4646-4de2-b0ec-2c511bb5afc5">
+               <description>Spark API</description>
+            </businessConnector>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>9zEcM1naPyYedL0XB9gh2F</types1:GUID>
+      <types1:DisplayName>AppConnForFHIR</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-06-11T05:23:53.9Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

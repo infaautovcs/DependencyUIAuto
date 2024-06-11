@@ -1,0 +1,47 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>38nXxpr1Iw8jIw8-gt-3301330-2024-05-08T06:34:37.877Z::po.xml</types1:EntryId>
+      <types1:Name>ports</types1:Name>
+      <types1:MimeType>application/xml+processobject</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>platformqa</types1:CreatedBy>
+      <types1:CreationDate>2024-05-08T06:34:38Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                        displayName="ports"
+                        isByCopy="true"
+                        name="ports">
+            <description/>
+            <tags/>
+            <detail>
+               <field label="type"
+                      name="type"
+                      nullable="true"
+                      required="false"
+                      type="string"/>
+               <field label="value"
+                      name="value"
+                      nullable="true"
+                      required="false"
+                      type="string"/>
+               <field label="name"
+                      name="name"
+                      nullable="true"
+                      required="false"
+                      type="string"/>
+            </detail>
+         </processObject>
+      </types1:Entry>
+      <types1:GUID>6De70j6L9cUgBYF4hxARsV</types1:GUID>
+      <types1:DisplayName>ports</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-06-11T05:23:52.801Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

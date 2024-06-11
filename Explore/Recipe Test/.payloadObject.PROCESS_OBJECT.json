@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "dLleFTkAc8DbEGqZq0YwE2",
+    "name" : "payloadObject",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "geBjrabcmWR7hsA-gt-3285571-2024-05-08T06:34:39.103Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-06-11T05:23:54.320Z",
+  "objectRefs" : [ {
+    "id" : "6De70j6L9cUgBYF4hxARsV",
+    "name" : "ports",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "38nXxpr1Iw8jIw8-gt-3301330-2024-05-08T06:34:37.877Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Recipe Test"
+  } ]
+}

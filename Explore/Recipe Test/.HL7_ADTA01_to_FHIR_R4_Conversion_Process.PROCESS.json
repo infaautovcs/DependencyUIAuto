@@ -1,0 +1,85 @@
+{
+  "objectInfo" : {
+    "id" : "06eRFXC2MC3kt3NH1nGXwo",
+    "name" : "HL7_ADTA01_to_FHIR_R4_Conversion_Process",
+    "type" : "PROCESS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "3fZPE4zlrMZgpDq-gt-3285595-2024-05-08T06:34:39.872Z::pd.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-06-11T05:23:54.319Z",
+  "objectRefs" : [ {
+    "id" : "dLleFTkAc8DbEGqZq0YwE2",
+    "name" : "payloadObject",
+    "type" : "PROCESS_OBJECT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "geBjrabcmWR7hsA-gt-3285571-2024-05-08T06:34:39.103Z::po.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Recipe Test"
+  }, {
+    "id" : "0f4cI9oXzPSe62ZgrtwDwL",
+    "name" : "ConnectionForDataServiceAPIServiceConnector",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "0CR3aaa-gt-3285561-2024-05-08T06:34:38.992Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "This connection uses DataServiceAPIServiceConnector",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Recipe Test"
+  }, {
+    "id" : "9zEcM1naPyYedL0XB9gh2F",
+    "name" : "AppConnForFHIR",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "nKf3eFhBJQWSwxF-gt-3285585-2024-05-08T06:34:39.214Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Recipe Test"
+  } ]
+}

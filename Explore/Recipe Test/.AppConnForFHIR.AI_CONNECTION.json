@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "9zEcM1naPyYedL0XB9gh2F",
+    "name" : "AppConnForFHIR",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "nKf3eFhBJQWSwxF-gt-3285585-2024-05-08T06:34:39.214Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-06-11T05:23:54.321Z",
+  "objectRefs" : [ {
+    "id" : "9CDx58N1A3qbkCfJXjKCM6",
+    "name" : "FHIR-SC",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "fRi1pqrzYLnzYLn-gt-3301338-2024-05-08T06:34:38.083Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Spark API",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/Recipe Test"
+  } ]
+}

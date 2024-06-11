@@ -1,0 +1,1286 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>fRi1pqrzYLnzYLn-gt-3301338-2024-05-08T06:34:38.083Z::svc.xml</types1:EntryId>
+      <types1:Name>FHIR-SC</types1:Name>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description>Spark API</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>platformqa</types1:CreatedBy>
+      <types1:CreationDate>2024-05-08T06:34:38Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="FHIR-SC"
+                            label=""
+                            name="FHIR-SC"
+                            uuid="d680efa4-4646-4de2-b0ec-2c511bb5afc5">
+            <description>Spark API</description>
+            <tags/>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd">
+               <connectionAttribute description=""
+                                    label="host"
+                                    masked="false"
+                                    name="host"
+                                    required="true"
+                                    testWith="invvector01.informatica.com"
+                                    type="string"/>
+               <connectionAttribute description=""
+                                    label="port"
+                                    masked="false"
+                                    name="port"
+                                    required="true"
+                                    testWith="5555"
+                                    type="string"/>
+            </connectionAttributes>
+            <actions>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="PATCH_fhir_"
+                       maxRedirects="100"
+                       name="PATCH_fhir_"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="___any"
+                                name="___any"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">$any</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }" verb="PATCH">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir_"
+                       maxRedirects="100"
+                       name="GET_fhir_"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith="Patient"
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith="3c3da3c3-8fcc-4edd-a959-a0eb2a9b197c"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="http://{ $host }:{ $port }/fhir/{ $type }/{ $id }" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/xml</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="DELETE_fhir_"
+                       maxRedirects="100"
+                       name="DELETE_fhir_"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }" verb="DELETE">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="PUT_fhir_"
+                       maxRedirects="100"
+                       name="PUT_fhir_"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="___any"
+                                name="___any"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">$any</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }" verb="PUT">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir___history_"
+                       maxRedirects="100"
+                       name="GET_fhir___history_"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="vid"
+                                name="vid"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }/_history/{ $vid }"
+                                        verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir_"
+                       maxRedirects="100"
+                       name="POST_fhir_"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label=""
+                                name="body"
+                                nogen="true"
+                                required="true"
+                                testWith="&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;&lt;Patient xmlns=&#34;http://hl7.org/fhir&#34;&gt;&lt;id value=&#34;1120&#34;/&gt;&lt;text&gt;&lt;status value=&#34;generated&#34;/&gt;&lt;div xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;&lt;p style=&#34;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&#34;&gt;&lt;b&gt; Jim &lt;/b&gt;  male, DoB: 1974-12-29 ( Medical record number: 12345 (use: USUAL, period: 2001-05-06--&amp;gt;(ongoing)))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&#34;grid&#34;&gt;&lt;tr&gt;&lt;td style=&#34;background-color: #f3f5da&#34; title=&#34;Record is active&#34;&gt;Active:&lt;/td&gt;&lt;td&gt; true&lt;/td&gt;&lt;td style=&#34;background-color: #f3f5da&#34; title=&#34;Known status of Patient&#34;&gt;Deceased:&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;background-color: #f3f5da&#34; title=&#34;Alternate names (see the one above)&#34;&gt;Alt Names:&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;&lt;ul&gt;&lt;li&gt; Peter James Chalmers (OFFICIAL)&lt;/li&gt;&lt;li&gt; Vikash (MAIDEN)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;background-color: #f3f5da&#34; title=&#34;Ways to contact the Patient&#34;&gt;Contact Details:&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;&lt;ul&gt;&lt;li&gt; -unknown-(HOME)&lt;/li&gt;&lt;li&gt; ph: (03) 5555 6473(WORK)&lt;/li&gt;&lt;li&gt; ph: (03) 3410 5613(MOBILE)&lt;/li&gt;&lt;li&gt; ph: (03) 5555 8834(OLD)&lt;/li&gt;&lt;li&gt; 534 Erewhon St PeasantVille, Rainbow, Vic  3999(HOME)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;background-color: #f3f5da&#34; title=&#34;Nominated Contact: Next-of-Kin&#34;&gt;Next-of-Kin:&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;&lt;ul&gt;&lt;li&gt; Vikash &lt;/li&gt;&lt;li&gt; Bangalore&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;tel:+33(237)998327&#34;&gt;+33 (237) 998327&lt;/a&gt;&lt;/li&gt;&lt;li&gt; Valid Period: 2012 --&amp;gt; (ongoing)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&#34;background-color: #f3f5da&#34; title=&#34;Patient Links&#34;&gt;Links:&lt;/td&gt;&lt;td colspan=&#34;3&#34;&gt;&lt;ul&gt;&lt;li&gt; Managing Organization:&lt;a href=&#34;organization-example-gastro.html&#34;&gt;Organization/1&lt;/a&gt;  &amp;quot;Gastroenterology&amp;quot;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/text&gt;&lt;identifier&gt;&lt;use value=&#34;usual&#34;/&gt;&lt;type&gt;&lt;coding&gt;&lt;system value=&#34;http://terminology.hl7.org/CodeSystem/v2-0203&#34;/&gt;&lt;code value=&#34;MR&#34;/&gt;&lt;/coding&gt;&lt;/type&gt;&lt;system value=&#34;urn:oid:1.2.36.146.595.217.0.1&#34;/&gt;&lt;value value=&#34;12345&#34;/&gt;&lt;period&gt;&lt;start value=&#34;2001-05-06&#34;/&gt;&lt;/period&gt;&lt;assigner&gt;&lt;display value=&#34;Acme Healthcare&#34;/&gt;&lt;/assigner&gt;&lt;/identifier&gt;&lt;active value=&#34;true&#34;/&gt;&lt;name&gt;&lt;use value=&#34;official&#34;/&gt;&lt;family value=&#34;Chalmers&#34;/&gt;&lt;given value=&#34;Peter&#34;/&gt;&lt;given value=&#34;James&#34;/&gt;&lt;/name&gt;&lt;name&gt;&lt;use value=&#34;usual&#34;/&gt;&lt;given value=&#34;Jim&#34;/&gt;&lt;/name&gt;&lt;name&gt;&lt;use value=&#34;maiden&#34;/&gt;&lt;family value=&#34;Windsor&#34;/&gt;&lt;given value=&#34;Peter&#34;/&gt;&lt;given value=&#34;James&#34;/&gt;&lt;period&gt;&lt;end value=&#34;2002&#34;/&gt;&lt;/period&gt;&lt;/name&gt;&lt;telecom&gt;&lt;use value=&#34;home&#34;/&gt;&lt;/telecom&gt;&lt;telecom&gt;&lt;system value=&#34;phone&#34;/&gt;&lt;value value=&#34;(03) 5555 6473&#34;/&gt;&lt;use value=&#34;work&#34;/&gt;&lt;rank value=&#34;1&#34;/&gt;&lt;/telecom&gt;&lt;telecom&gt;&lt;system value=&#34;phone&#34;/&gt;&lt;value value=&#34;(03) 3410 5613&#34;/&gt;&lt;use value=&#34;mobile&#34;/&gt;&lt;rank value=&#34;2&#34;/&gt;&lt;/telecom&gt;&lt;telecom&gt;&lt;system value=&#34;phone&#34;/&gt;&lt;value value=&#34;(03) 5555 8834&#34;/&gt;&lt;use value=&#34;old&#34;/&gt;&lt;period&gt;&lt;end value=&#34;2014&#34;/&gt;&lt;/period&gt;&lt;/telecom&gt;&lt;gender value=&#34;male&#34;/&gt;&lt;birthDate value=&#34;1974-12-25&#34;&gt;&lt;extension url=&#34;http://hl7.org/fhir/StructureDefinition/patient-birthTime&#34;&gt;&lt;valueDateTime value=&#34;1974-12-25T14:35:45-05:00&#34;/&gt;&lt;/extension&gt;&lt;/birthDate&gt;&lt;deceasedBoolean value=&#34;false&#34;/&gt;&lt;address&gt;&lt;use value=&#34;home&#34;/&gt;&lt;type value=&#34;both&#34;/&gt;&lt;text value=&#34;534 Erewhon St PeasantVille, Rainbow, Vic  3999&#34;/&gt;&lt;line value=&#34;534 Erewhon St&#34;/&gt;&lt;city value=&#34;PleasantVille&#34;/&gt;&lt;district value=&#34;Rainbow&#34;/&gt;&lt;state value=&#34;Vic&#34;/&gt;&lt;postalCode value=&#34;3999&#34;/&gt;&lt;period&gt;&lt;start value=&#34;1974-12-25&#34;/&gt;&lt;/period&gt;&lt;/address&gt;&lt;contact&gt;&lt;relationship&gt;&lt;coding&gt;&lt;system value=&#34;http://terminology.hl7.org/CodeSystem/v2-0131&#34;/&gt;&lt;code value=&#34;N&#34;/&gt;&lt;/coding&gt;&lt;/relationship&gt;&lt;name&gt;&lt;family value=&#34;du Marché&#34;&gt;&lt;extension url=&#34;http://hl7.org/fhir/StructureDefinition/humanname-own-prefix&#34;&gt;&lt;valueString value=&#34;VV&#34;/&gt;&lt;/extension&gt;&lt;/family&gt;&lt;given value=&#34;Bénédicte&#34;/&gt;&lt;/name&gt;&lt;telecom&gt;&lt;system value=&#34;phone&#34;/&gt;&lt;value value=&#34;+33 (237) 998327&#34;/&gt;&lt;/telecom&gt;&lt;address&gt;&lt;use value=&#34;home&#34;/&gt;&lt;type value=&#34;both&#34;/&gt;&lt;line value=&#34;534 Erewhon St&#34;/&gt;&lt;city value=&#34;PleasantVille&#34;/&gt;&lt;district value=&#34;Rainbow&#34;/&gt;&lt;state value=&#34;Vic&#34;/&gt;&lt;postalCode value=&#34;3999&#34;/&gt;&lt;period&gt;&lt;start value=&#34;1974-12-25&#34;/&gt;&lt;/period&gt;&lt;/address&gt;&lt;gender value=&#34;female&#34;/&gt;&lt;period&gt;&lt;start value=&#34;2012&#34;/&gt;&lt;/period&gt;&lt;/contact&gt;&lt;managingOrganization&gt;&lt;reference value=&#34;Organization/1&#34;/&gt;&lt;/managingOrganization&gt;&lt;/Patient&gt; "
+                                type="reference">
+                        <options>
+                           <option name="relationshipName">Child</option>
+                           <option name="referenceTo">$po:$any</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith="Patient"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="http://{ $host }:{ $port }/fhir/{ $type }" verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/xml</header>
+                           <header name="Accept">application/xml</header>
+                        </httpHeaders>
+                        <body>{ $body }</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir_1"
+                       maxRedirects="100"
+                       name="GET_fhir_1"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="http://{ $host }:{ $port }/fhir/{ $type }" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="DELETE_fhir_1"
+                       maxRedirects="100"
+                       name="DELETE_fhir_1"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }" verb="DELETE">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir___history"
+                       maxRedirects="100"
+                       name="GET_fhir___history"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }/_history"
+                                        verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir___validate"
+                       maxRedirects="100"
+                       name="POST_fhir___validate"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="___any"
+                                name="___any"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">$any</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }/$validate"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir__validate"
+                       maxRedirects="100"
+                       name="POST_fhir__validate"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="___any"
+                                name="___any"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">$any</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/$validate" verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir__search"
+                       maxRedirects="100"
+                       name="POST_fhir__search"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/_search" verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir__history"
+                       maxRedirects="100"
+                       name="GET_fhir__history"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/_history" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir_metadata"
+                       maxRedirects="100"
+                       name="GET_fhir_metadata"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/metadata" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir"
+                       maxRedirects="100"
+                       name="POST_fhir"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="___any"
+                                name="___any"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">$any</option>
+                        </options>
+                     </parameter>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir" verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="OPTIONS_fhir"
+                       maxRedirects="100"
+                       name="OPTIONS_fhir"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir" verb="OPTIONS">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir__history1"
+                       maxRedirects="100"
+                       name="GET_fhir__history1"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding url="http://{ $host }:{ $port }/fhir/_history" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">accept: application/fhir+json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir__snapshot"
+                       maxRedirects="100"
+                       name="GET_fhir__snapshot"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input/>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/_snapshot" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir__"
+                       maxRedirects="100"
+                       name="POST_fhir__"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="operation"
+                                name="operation"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/${ $operation }" verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir___"
+                       maxRedirects="100"
+                       name="POST_fhir___"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="___any"
+                                name="___any"
+                                required="true"
+                                testWith=""
+                                type="reference">
+                        <options>
+                           <option name="referenceTo">$any</option>
+                        </options>
+                     </parameter>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="operation"
+                                name="operation"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }/${ $operation }"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body generateUsing="UnwrappedJSON"/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir___everything"
+                       maxRedirects="100"
+                       name="POST_fhir___everything"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }/$everything"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir___everything"
+                       maxRedirects="100"
+                       name="GET_fhir___everything"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/{ $id }/$everything"
+                                        verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir__everything"
+                       maxRedirects="100"
+                       name="POST_fhir__everything"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/$everything"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir__everything"
+                       maxRedirects="100"
+                       name="GET_fhir__everything"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="type"
+                                name="type"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/{ $type }/$everything" verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="POST_fhir_Composition__document"
+                       maxRedirects="100"
+                       name="POST_fhir_Composition__document"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/Composition/{ $id }/$document"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">text/plain; charset=UTF-8</header>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                        <body/>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+               <action category="Fhir"
+                       failOnError="true"
+                       forSearch="false"
+                       isAbstract="false"
+                       label="GET_fhir_Composition__document"
+                       maxRedirects="100"
+                       name="GET_fhir_Composition__document"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label="id"
+                                name="id"
+                                nogen="true"
+                                required="true"
+                                testWith=""
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding url="https://{ $host }:{ $port }/fhir/Composition/{ $id }/$document"
+                                        verb="GET">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Accept">application/json</header>
+                        </httpHeaders>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description="Success"
+                            entireResponse="true"
+                            name="fhirResponse"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">FhirResponse</option>
+                        </options>
+                     </field>
+                  </output>
+               </action>
+            </actions>
+            <objects>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              isByCopy="true"
+                              name="FhirResponse">
+                  <description/>
+                  <detail>
+                     <field label="isValid"
+                            name="isValid"
+                            nullable="true"
+                            required="false"
+                            type="boolean"/>
+                     <field label="hasBody"
+                            name="hasBody"
+                            nullable="true"
+                            required="false"
+                            type="boolean"/>
+                  </detail>
+               </processObject>
+            </objects>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>9CDx58N1A3qbkCfJXjKCM6</types1:GUID>
+      <types1:DisplayName>FHIR-SC</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-06-11T05:23:53.047Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

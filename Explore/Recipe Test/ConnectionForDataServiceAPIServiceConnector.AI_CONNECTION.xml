@@ -1,0 +1,41 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>0CR3aaa-gt-3285561-2024-05-08T06:34:38.992Z::conn.xml</types1:EntryId>
+      <types1:Name>ConnectionForDataServiceAPIServiceConnector</types1:Name>
+      <types1:ParentFlowIds>3fZPE4zlrMZgpDq-gt-3285595-2024-05-08T06:34:39.872Z::pd.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description>This connection uses DataServiceAPIServiceConnector</types1:Description>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:tavubugwdev8.informatica.com_old</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>platformqa</types1:CreatedBy>
+      <types1:CreationDate>2024-05-08T06:34:39Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="ConnectionForDataServiceAPIServiceConnector"
+                     label="ConnectionForDataServiceAPIServiceConnector"
+                     name="ConnectionForDataServiceAPIServiceConnector">
+            <description>This connection uses DataServiceAPIServiceConnector</description>
+            <tags>.agent:tavubugwdev8.informatica.com_old</tags>
+            <agent>tavubugwdev8.informatica.com_old</agent>
+            <businessConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                               agentOnly="false"
+                               connectorPath="project:/rt.connector/DataServiceAPIServiceConnector_1/DataServiceAPIServiceConnector_1_svcDef.xml"
+                               guid="fJ6FsX68jI1fnSNYLZ5dMG"
+                               name="DataServiceAPIServiceConnector"
+                               supportsConnectionTest="false"
+                               uuid="782fe1a2-75ac-43f2-97db-2f443a8ddda6">
+               <description>Service Connector for Job REST API</description>
+            </businessConnector>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>0f4cI9oXzPSe62ZgrtwDwL</types1:GUID>
+      <types1:DisplayName>ConnectionForDataServiceAPIServiceConnector</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-06-11T05:23:53.833Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

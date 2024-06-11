@@ -1,0 +1,420 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>3fZPE4zlrMZgpDq-gt-3285595-2024-05-08T06:34:39.872Z::pd.xml</types1:EntryId>
+      <types1:Name>HL7_ADTA01_to_FHIR_R4_Conversion_Process</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags>.agent:tavubugwdev8.informatica.com_old</types1:Tags>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>platformqa</types1:CreatedBy>
+      <types1:CreationDate>2024-05-08T06:34:40Z</types1:CreationDate>
+      <types1:ModifiedBy/>
+      <types1:PublicationStatus>unpublished</types1:PublicationStatus>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  displayName="HL7_ADTA01_to_FHIR_R4_Conversion_Process"
+                  name="HL7_ADTA01_to_FHIR_R4_Conversion_Process"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags>.agent:tavubugwdev8.informatica.com_old</tags>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="sName_fhir" required="false" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="fhir_validator_service_name"
+                          required="false"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="inputUsername"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description=""
+                          name="inputPassword"
+                          required="true"
+                          type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+               <parameter description="" name="payload" required="false" type="reference">
+                  <options>
+                     <option name="required">false</option>
+                     <option name="referenceTo">$po:payloadObject</option>
+                     <option name="isCopy">true</option>
+                     <option name="guid">dLleFTkAc8DbEGqZq0YwE2</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="out_output" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="out_message" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="out_additionalOutput" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <tempFields>
+               <field description="" name="ICSessionId" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="normal">
+               <targetLocation>tavubugwdev8.informatica.com_old</targetLocation>
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <flow id="z839c0332-3e0c-43a4-9e58-e02b9ce91fcd">
+               <start id="r04991892-47dd-4aec-a1ad-64e829d5f5c4">
+                  <link id="i0046b579-3596-4078-a83a-6fb152a3a578"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jg85ybaq"/>
+               </start>
+               <service id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jg85ybaq">
+                  <title>Login</title>
+                  <serviceName>ConnectionForDataServiceAPIServiceConnector:Login</serviceName>
+                  <serviceGUID>0f4cI9oXzPSe62ZgrtwDwL</serviceGUID>
+                  <serviceInput>
+                     <parameter name="@type" source="constant">login</parameter>
+                     <parameter name="username" source="field">input.inputUsername</parameter>
+                     <parameter name="password" source="field">input.inputPassword</parameter>
+                  </serviceInput>
+                  <link id="p7d21ab96-01ad-4024-8183-5b8ce8042184"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jg85ybb8"/>
+               </service>
+               <service id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jg85ybb8">
+                  <title>Invoke_HL7_V26_Parser</title>
+                  <serviceName>ConnectionForDataServiceAPIServiceConnector:InvokeDataServiceAPI</serviceName>
+                  <serviceGUID>0f4cI9oXzPSe62ZgrtwDwL</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.out_sessionId</parameter>
+                     <parameter name="agentGroupId" source="field">input.payload[1]/agrpId</parameter>
+                     <parameter name="serviceName" source="constant">HL7_2_6_ADT_A01_Parser</parameter>
+                     <parameter name="input" source="formula">
+                        <expression language="XQuery">$input.payload[1]/input</expression>
+                     </parameter>
+                     <parameter name="output" source="formula">
+                        <expression language="XQuery">$input.payload[1]/output</expression>
+                     </parameter>
+                     <parameter name="additionalInputs" source="formula">
+                        <expression language="XQuery">$input.payload[1]/additionalInputs</expression>
+                     </parameter>
+                     <parameter name="additionalOutputs" source="formula">
+                        <expression language="XQuery">$input.payload[1]/additionalOutputs</expression>
+                     </parameter>
+                  </serviceInput>
+                  <link id="w323f0256-d52a-4c88-9437-b5153baa8625"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-Decision017e10d2-3293-412e-8a4c-444753bdc00c"/>
+               </service>
+               <service id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Service223ad075-a5be-403d-929c-5de62d709d79">
+                  <title>HL7_to_FHIR</title>
+                  <serviceName>ConnectionForDataServiceAPIServiceConnector:InvokeDataServiceAPI</serviceName>
+                  <serviceGUID>0f4cI9oXzPSe62ZgrtwDwL</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.out_sessionId</parameter>
+                     <parameter name="agentGroupId" source="field">input.payload[1]/agrpId</parameter>
+                     <parameter name="serviceName" source="constant">ADT_A01_FHIR_4_0_1_Mapper</parameter>
+                     <parameter name="input" source="formula">
+                        <expression language="XQuery">$input.payload[1]/input</expression>
+                     </parameter>
+                     <parameter name="output" source="formula">
+                        <expression language="XQuery">$input.payload[1]/output</expression>
+                     </parameter>
+                     <parameter name="serviceParameters" source="formula">
+                        <expression language="XQuery">$input.payload[1]/serviceParameters</expression>
+                     </parameter>
+                  </serviceInput>
+                  <link id="m9eea0d99-e3b7-412a-af37-2ab16f7b75fd"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Assignment59959c6d-f25b-4788-ba3c-8fc428940904"/>
+               </service>
+               <service id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Service5d09910c-829a-40e7-a8b0-bbb1b8366add">
+                  <title>FHIR_Validator</title>
+                  <serviceName>ConnectionForDataServiceAPIServiceConnector:InvokeDataServiceAPI</serviceName>
+                  <serviceGUID>0f4cI9oXzPSe62ZgrtwDwL</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.out_sessionId</parameter>
+                     <parameter name="agentGroupId" source="field">input.payload[1]/agrpId</parameter>
+                     <parameter name="serviceName" source="constant">Bundle_FHIR_VRL_VALIDATOR</parameter>
+                     <parameter name="input" source="formula">
+                        <expression language="XQuery">$input.payload[1]/input</expression>
+                     </parameter>
+                     <parameter name="output" source="formula">
+                        <expression language="XQuery">$input.payload[1]/output</expression>
+                     </parameter>
+                     <parameter name="additionalOutputs" source="formula">
+                        <expression language="XQuery">$input.payload[1]/additionalOutputs</expression>
+                     </parameter>
+                  </serviceInput>
+                  <link id="xc7178e6c-dabb-47bb-947d-3d87e794bc9b"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-Decisioncfdd0c23-9915-400d-b81c-045d3e6005df"/>
+               </service>
+               <service id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Service4222f0d5-084d-489e-a472-9b6d88f67018">
+                  <title>POST_fhir_</title>
+                  <serviceName>AppConnForFHIR:POST_fhir_</serviceName>
+                  <serviceGUID>9zEcM1naPyYedL0XB9gh2F</serviceGUID>
+                  <serviceInput>
+                     <parameter name="body" source="formula">
+                        <expression language="XQuery">$output.out_output</expression>
+                     </parameter>
+                     <parameter name="type" source="constant">Bundle</parameter>
+                  </serviceInput>
+                  <link id="ncb4c199b-f415-41c1-9a1f-bdcc9f6dd278"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jgi9edvp"/>
+               </service>
+               <service id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jgi9edvp">
+                  <title>Logout</title>
+                  <serviceName>ConnectionForDataServiceAPIServiceConnector:Logout</serviceName>
+                  <serviceGUID>0f4cI9oXzPSe62ZgrtwDwL</serviceGUID>
+                  <serviceInput>
+                     <parameter name="sessionId" source="field">output.out_sessionId</parameter>
+                  </serviceInput>
+                  <link id="yd5a03d24-0a2f-4d41-9d9a-c74105bcb67d"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-c"/>
+               </service>
+               <container id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-Decision017e10d2-3293-412e-8a4c-444753bdc00c"
+                          type="exclusive">
+                  <title>additionalOutputs</title>
+                  <flow id="j040c269b-0852-406c-9c89-c9ae99fa6364">
+                     <link id="t0ff0fdfa-6e73-483a-b23d-dab73fc72e11"
+                           targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-Decision017e10d2-3293-412e-8a4c-444753bdc00c"
+                           type="containerLink"/>
+                  </flow>
+                  <flow id="r2db0f385-ff9c-4ac0-b409-f7091b9df2e7">
+                     <throw id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-Throw73986357-fa01-468c-bfda-78bfffb1ebc8">
+                        <title>Throw 1</title>
+                        <throwInput>
+                           <parameter name="code" source="constant" updatable="true">{$input.payload[1]/input[1]/value}</parameter>
+                           <parameter name="detail" source="constant" updatable="true">HL7 Validation failed</parameter>
+                           <parameter name="reason" source="constant" updatable="true">ErrorsFound</parameter>
+                        </throwInput>
+                     </throw>
+                  </flow>
+                  <link id="l133f4198-0dc7-4697-bf15-e8f78f55b3f1"
+                        targetId="j040c269b-0852-406c-9c89-c9ae99fa6364"
+                        type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$output.out_additionalOutput}</arg>
+                           <arg name="right">false</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="ma7f77fba-9b66-4d43-bb5b-f404934985c3"
+                        targetId="r2db0f385-ff9c-4ac0-b409-f7091b9df2e7"
+                        type="containerLink"/>
+                  <link id="ge470d76e-bbc7-4e75-b0c3-3ffca7c09eb4"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jg86kepq"/>
+               </container>
+               <container id="a12IwzroWrPKAdW1nifRm2I8-Decisioncfdd0c23-9915-400d-b81c-045d3e6005df"
+                          type="exclusive">
+                  <title>out_additionalOutput</title>
+                  <flow id="re150cd26-9179-431a-9924-109f01142801">
+                     <link id="h520545ac-b263-43c1-be90-ac9525abdb65"
+                           targetId="a12IwzroWrPKAdW1nifRm2I8-Decisioncfdd0c23-9915-400d-b81c-045d3e6005df"
+                           type="containerLink"/>
+                  </flow>
+                  <flow id="x96ac33d8-2420-4927-9c01-b868e96a994f">
+                     <throw id="a12IwzroWrPKAdW1nifRm2I8-Throw4d1939ac-5910-4894-9797-90ca9a2546b7">
+                        <title>FHIR Validation Error</title>
+                        <throwInput>
+                           <parameter name="code" source="constant" updatable="true">FHIR Validation Failed</parameter>
+                           <parameter name="detail" source="constant" updatable="true">FHIR Validation Failed</parameter>
+                           <parameter name="reason" source="constant" updatable="true">FHIR Validation Failed</parameter>
+                        </throwInput>
+                     </throw>
+                  </flow>
+                  <link id="n1b6172b9-8dc9-48dd-b3bd-2854cdb770de"
+                        targetId="re150cd26-9179-431a-9924-109f01142801"
+                        type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$output.out_additionalOutput}</arg>
+                           <arg name="right">false</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="qc539c96e-f0c7-4e0c-b0f3-8ba5222cfe28"
+                        targetId="x96ac33d8-2420-4927-9c01-b868e96a994f"
+                        type="containerLink"/>
+                  <link id="e43ae40b8-9a05-4f12-a348-18175babbee0"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Service4222f0d5-084d-489e-a472-9b6d88f67018"/>
+               </container>
+               <assignment id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-jg86kepq">
+                  <title>Parsed HL7 output xml</title>
+                  <operation source="field" to="output.out_output">output.out_output</operation>
+                  <operation source="field" to="output.out_message">output.out_message</operation>
+                  <operation source="field" to="input.payload[1]/input[1]/value">output.out_output</operation>
+                  <operation source="constant" to="input.payload[1]/input[1]/type">BUFFER</operation>
+                  <link id="tc0a00e60-d5f8-4616-860a-aee9a5902059"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Service223ad075-a5be-403d-929c-5de62d709d79"/>
+               </assignment>
+               <assignment id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Assignment59959c6d-f25b-4788-ba3c-8fc428940904">
+                  <title>Output FHIR Bundle</title>
+                  <operation source="field" to="output.out_message">output.out_message</operation>
+                  <operation source="field" to="input.payload[1]/input[1]/value">output.out_output</operation>
+                  <link id="c59dc491d-0d15-4109-93f5-3a38e99e9db1"
+                        targetId="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-Service5d09910c-829a-40e7-a8b0-bbb1b8366add"/>
+               </assignment>
+               <end id="a12IwzroWrPKAdW1nifRm2I8-a11fVN9H0lyATgRnw1ALmbmf-a1as2bqniQQqObNE1o2sVDiG-a11QQpAxwXjZaga07br9ItAD-c">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+         <ns1:sample-data-sets xmlns:ns1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/sampleData.xsd">
+            <ns1:SampleData>
+               <ns1:Id>b75776a8-0069-4726-8083-21e135ec967a</ns1:Id>
+               <ns1:Name>error_free</ns1:Name>
+               <ns1:CreatedBy>platformqa</ns1:CreatedBy>
+               <ns1:CreationDate>2024-05-08T06:34:40Z</ns1:CreationDate>
+               <ns1:ModifiedBy>platformqa</ns1:ModifiedBy>
+               <ns1:ModificationDate>2024-05-08T06:34:40Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "payload": {
+        "agrpId": "010BM025000000000007",
+        "input":{
+        "type": "FILE",
+        "value": "/data/podDataSets/ADT_A01_v26_s4_ERROR_FREE.txt"
+    },
+        "output": {
+            "type": "BUFFER"
+        },
+        "additionalInputs": [],
+        "additionalOutputs": [
+            {
+                "name": "Errors",
+                "type": "BUFFER"
+            },
+            {
+                "name": "ErrorsFound",
+                "type": "BUFFER"
+            }
+        ],
+        "serviceParameters": [
+           
+           {
+                "name": "util_infaBaseURL",
+                "value": "http://invvector01:5555/"
+            },
+            {
+                "name": "SM_MSH_Bundle_type",
+                "value": "message"
+            }
+        ]
+    }
+
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>51a79ce5-eebd-4238-9eb4-161e6436b591</ns1:Id>
+               <ns1:Name>in</ns1:Name>
+               <ns1:CreatedBy>platformqa</ns1:CreatedBy>
+               <ns1:CreationDate>2024-05-08T06:34:40Z</ns1:CreationDate>
+               <ns1:ModifiedBy>platformqa</ns1:ModifiedBy>
+               <ns1:ModificationDate>2024-05-08T06:34:40Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "payload": {
+        "agrpId": "010BM025000000000007",
+        "input":{
+        "type": "FILE",
+        "value": "/home/infa/input/2_6/ADT_A01_2_6_PID24_MultipleBirthIndicator.txt"
+    },
+        "output": {
+            "type": "BUFFER"
+        },
+        "additionalInputs": [],
+        "additionalOutputs": [
+            {
+                "name": "Errors",
+                "type": "BUFFER"
+            },
+            {
+                "name": "ErrorsFound",
+                "type": "BUFFER"
+            }
+        ],
+        "serviceParameters": []
+    },"serviceName":"HL7_2_6_ADT_A01_Parser",
+  "sName_fhir":"ADT_A01_FHIR_4_0_1_Mapper",
+  "fhir_validator_service_name":"Bundle_FHIR_VRL_VALIDATOR"
+}</ns1:Data>
+            </ns1:SampleData>
+            <ns1:SampleData>
+               <ns1:Id>65ecbf4c-1e86-4774-9025-5bef25106256</ns1:Id>
+               <ns1:Name>payload_req</ns1:Name>
+               <ns1:CreatedBy>platformqa</ns1:CreatedBy>
+               <ns1:CreationDate>2024-05-08T06:34:40Z</ns1:CreationDate>
+               <ns1:ModifiedBy>platformqa</ns1:ModifiedBy>
+               <ns1:ModificationDate>2024-05-08T06:34:40Z</ns1:ModificationDate>
+               <ns1:Data format="json">{
+    "payload": {
+        "agrpId": "010BM025000000000007",
+        "input": {
+        "name": null,
+        "type": "FILE",
+        "value": "/data/podDataSets/HIPAA_5010A1_834_4MB_CRonly.txt"
+    },
+        "output": {
+        "name": null,
+        "type": "FILE",
+        "value": "/data/podDataSets/"
+    },
+        "additionalInputs": [],
+        "additionalOutputs": [
+        {
+            "name": "Errors",
+            "type": "FILE",
+            "value": "/data/podDataSets/"
+        },
+        {
+            "name": "ErrorsFound",
+            "type": "FILE",
+            "value": "/data/podDataSets/"
+        },
+        {
+            "name": "ValidationReport",
+            "type": "FILE",
+            "value": "/data/podDataSets/"
+        }
+    ],
+        "serviceParameters": []
+    }
+}</ns1:Data>
+            </ns1:SampleData>
+         </ns1:sample-data-sets>
+      </types1:Entry>
+      <types1:GUID>06eRFXC2MC3kt3NH1nGXwo</types1:GUID>
+      <types1:DisplayName>HL7_ADTA01_to_FHIR_R4_Conversion_Process</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2024-06-11T05:23:54.041Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
