@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-06-16T03:38:43.029Z",
+  "updateTime" : "2024-06-16T03:39:13.254Z",
   "objectRefs" : [ {
     "id" : "3FzSb9skTKmiKeEyfxATSn",
     "name" : "FF",
@@ -56,10 +56,7 @@
       "repoInfo" : {
         "repoHandle" : "016PI1170000000000BC"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "Multiple Lookup Condition",
         "contentType" : "JSON",
