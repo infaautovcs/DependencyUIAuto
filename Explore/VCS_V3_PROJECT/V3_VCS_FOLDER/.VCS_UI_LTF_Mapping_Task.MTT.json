@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-06-19T17:29:36.609Z",
+  "updateTime" : "2024-06-19T17:29:47.559Z",
   "objectRefs" : [ {
     "id" : "1ZzOuSOMP54kXkcDSWyMO9",
     "name" : "FF_PodCertification",
@@ -56,10 +56,7 @@
       "repoInfo" : {
         "repoHandle" : "01001I17000000000003"
       },
-      "contextAttributes" : [ {
-        "name" : "id",
-        "value" : "@1"
-      } ],
+      "contextAttributes" : null,
       "additionalInfo" : {
         "description" : "",
         "contentType" : "JSON",
