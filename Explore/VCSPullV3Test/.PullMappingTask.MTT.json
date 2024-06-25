@@ -1,6 +1,6 @@
 {
   "objectInfo" : {
-    "id" : "5Y7Vw036YFZd9iABV02QWh",
+    "id" : "9TphqyM0ygph0WxrEqKLIG",
     "name" : "PullMappingTask",
     "type" : "MTT",
     "metadata" : {
@@ -9,7 +9,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016PI10Z0000000000HG"
+        "repoHandle" : "018OLG0Z000000000083"
       },
       "contextAttributes" : [ {
         "name" : "id",
@@ -23,29 +23,9 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2024-06-25T23:22:24.438Z",
+  "updateTime" : "2024-06-25T23:55:14.415Z",
   "objectRefs" : [ {
-    "id" : "5hbF4NesKTsl73Zr1Ef5cL",
-    "name" : "gridplatform-1",
-    "type" : "AgentGroup",
-    "metadata" : {
-      "modelVersion" : {
-        "major" : 0,
-        "minor" : 0
-      },
-      "repoInfo" : {
-        "repoHandle" : "01227E250000000000HV"
-      },
-      "contextAttributes" : null,
-      "additionalInfo" : {
-        "description" : null,
-        "contentType" : "JSON",
-        "documentState" : "VALID"
-      }
-    },
-    "path" : "/SYS"
-  }, {
-    "id" : "3FzSb9skTKmiKeEyfxATSn",
+    "id" : "6TjcvhYIvQkfh4xYPCBJel",
     "name" : "FF",
     "type" : "Connection",
     "metadata" : {
@@ -54,7 +34,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016PI10B000000000002"
+        "repoHandle" : "018OLG0B000000000002"
       },
       "contextAttributes" : null,
       "additionalInfo" : {
@@ -65,7 +45,27 @@
     },
     "path" : "/SYS"
   }, {
-    "id" : "3kDJIv6BQLVeXKU49KDaoS",
+    "id" : "6Yu7RTtXxxjb2D2h7uvsW5",
+    "name" : "Informatica Cloud Hosted Agent",
+    "type" : "AgentGroup",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "025000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/SYS"
+  }, {
+    "id" : "0UFNBhBuV20bGrsceS4O65",
     "name" : "cmd_VCSPullV3Test",
     "type" : "DTEMPLATE",
     "metadata" : {
@@ -74,7 +74,7 @@
         "minor" : 0
       },
       "repoInfo" : {
-        "repoHandle" : "016PI1170000000000BC"
+        "repoHandle" : "018OLG17000000000003"
       },
       "contextAttributes" : [ {
         "name" : "id",
