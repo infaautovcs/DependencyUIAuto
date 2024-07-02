@@ -1,0 +1,45 @@
+{
+  "objectInfo" : {
+    "id" : "lu8NkPJLk6Idk1TJ2u3RmH",
+    "name" : "ConnectionForDataServiceAPIServiceConnector",
+    "type" : "AI_CONNECTION",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "E7ppppppppppppp-gt-120428-2024-06-03T14:57:58.499Z::conn.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "This connection uses DataServiceAPIServiceConnector",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2024-07-02T11:00:08.229Z",
+  "objectRefs" : [ {
+    "id" : "aqEwk9vj5qQgTr7V0rx7MB",
+    "name" : "DataServiceAPIServiceConnector",
+    "type" : "AI_SERVICE_CONNECTOR",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "yhBWJgki8MZgpDq-gt-121307-2024-06-03T14:57:57.401Z::svc.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "Service Connector for Job REST API",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/COPY_MOVE_UI"
+  } ]
+}
